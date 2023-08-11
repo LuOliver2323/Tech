@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Primeiro Formulario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Cadastro de Usuário</a>
+   
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Configurações</button>
+            <button class="btn btn-outline-success" type="submit">Perfil</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <main class="container margin-top">
+        <h1>Novo Usuário</h1>
+
+        <i class="bi bi-basket2-fill"></i>
+
+        <div class="row">
+            <div class="col-12">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" placeholder="Informe o nome..." id="nome" name="nome">                
+            </div>
+
+            <div class="col-3">    
+            <label for="nome" class="form-label">CPF</label>
+                <input type="text" class="form-control" placeholder="Informe o cpf..." id="cpf" name="nome">
+            </div>
+
+            <div class="col-6">    
+            <label for="nome" class="form-label">Endereço</label>
+                <input type="text" class="form-control" placeholder="Informe o endereço..." id="endereco" name="nome">
+            </div>
+
+            <div class="col-3">    
+            <label for="nome" class="form-label">Nível</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>---</option>
+                    <option value="1">Um</option>
+                    <option value="2">Dois</option>
+                    <option value="3">Três</option>
+                </select>
+            </div>
+
+            <div class="col-6">    
+            <label for="nome" class="form-label">E-mail</label>
+                <input type="text" class="form-control" placeholder="Informe o e-mail..." id="email" name="nome">
+            </div>
+
+            <div class="col-3">    
+            <label for="nome" class="form-label">Senha</label>
+                <input type="text" class="form-control" placeholder="Informe a senha..." id="senha" name="nome">
+            </div>
+
+            <div class="col-3">    
+            <label for="nome" class="form-label">Status</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>---</option>
+                    <option value="1">Um</option>
+                    <option value="2">Dois</option>
+                    <option value="3">Três</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="row margin-top">
+            <div class="d-grid gap-2 d-md-flex margin-top-2 justify-content-md-end">
+                <button class="btn btn-success" type="button">Enviar</button>
+                <button class="btn btn-secondary" type="button">Cancelar</button>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
