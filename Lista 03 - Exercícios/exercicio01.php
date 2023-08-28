@@ -9,11 +9,11 @@
   </head>
 
   <body class="container mt-5">
-  <form action="exercicio01.php" method="POST">
+  <form action="exer01_resp.php" method="POST">
   
   <h1><center>Exercício 01</center></h1>
 
-    <?php for($i=1; $i<=10; $i++){ ?>
+    <?php for($i=1; $i<=2; $i++){ ?>
 
     <div class="row">
         <div class="col">
@@ -38,17 +38,6 @@
     </div>
 
   </form>
-
-  <?php
-    if($_POST){
-        for($i=1; $i<=10; $i++){
-            $vetor[$_POST["aluno$i"]] = $_POST["nota$i"];
-        }
-        foreach($vetor as $chave => $valor){
-            echo "<br> Nome do Aluno: $chave - Nota: $valor";
-        }
-    }
-  ?>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

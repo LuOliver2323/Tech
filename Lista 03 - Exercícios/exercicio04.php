@@ -9,7 +9,7 @@
   </head>
 
   <body class="container mt-5">
-  <form action="exercicio04.php" method="POST">
+  <form action="exer04_resp.php" method="POST">
   
   <h1><center>Exercício 04</center></h1>
 
@@ -18,7 +18,7 @@
     <div class="row">
         <div class="col">
             <label for="numero" class="form-label">Informe um número para descobrir o mês : </label>
-            <input type="number" name="numero" id="numero" class="form-control" min="1" max="12" required/> 
+            <input type="number" name="numero" id="numero" class="form-control"/> 
         </div>
     </div>
 
@@ -31,34 +31,7 @@
             <button type="submit" class="btn btn-primary">Calcular</button>
         </div>
     </div>
-
   </form>
-
-  <?php
-      $meses = array(
-        1 => 'Janeiro', 
-        2 => 'Fevereiro', 
-        3 => 'Março', 
-        4 => 'Abril',
-        5 => 'Maio', 
-        6 => 'Junho', 
-        7 => 'Julho', 
-        8 => 'Agosto',
-        9 => 'Setembro', 
-        10 => 'Outubro', 
-        11 => 'Novembro', 
-        12 => 'Dezembro'
-    );
-
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $numero = $_POST['numero'];
-        if ($numero >= 1 && $numero <= 12) {
-            echo '<p>O mês correspondente é ' . $numero . ' é: ' . $meses[$numero] . '</p>';
-        } else {
-            echo '<p>Número inválido. Digite um número entre 1 e 12.</p>';
-        }
-    }
-  ?>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
