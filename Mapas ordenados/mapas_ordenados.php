@@ -4,8 +4,6 @@
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <title>Lista 2 - Exercício 01</title>
   </head>
   <body>
   
@@ -16,7 +14,8 @@
         "valor2" => 2,
         "valor3" => 3,
         4 => 4
-    ];
+    ];  
+
     var_dump($vetor);
     echo "<br>";
     echo "O valor da posição [valor1] é {$vetor["valor1"]}";

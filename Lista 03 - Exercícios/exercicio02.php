@@ -4,25 +4,31 @@
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Lista 2 - Resposta Exercício 04</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
+    <title>Lista 3 - Exercício 02</title>
   </head>
-  <body>
-    
-  <div class="container mt-5">
-    <h1>
-      <?php
-      $valor = $_POST["valor"];
-        
-        echo "<h3>Tabuada do $valor:</h3>";
-        for ($i = 0; $i <= 10; $i++) {
-            $resultado = $valor * $i;
-            echo "$valor x $i = $resultado<br>";
-        }
-    ?>
-  </div>
 
+  <body class="container mt-5">
+  <form action="exer02_resp.php" method="POST">
+  
+  <h1><center>Exercício 02</center></h1>
+
+    <div class="row">
+      <?php for($i=1;$i<=2;$i++){ ?>
+        <div class="col">
+            <label for="form-label" for="v<?=$i?>">Informe o valor <?=$i?>: </label>
+            <input type="number" id="v<?=$i?>" name="v<?=$i?>" class="form-control"/>
+        </div>
+        <?php } ?>
+    </div>
+
+    <div class="row"> 
+        <div class="col">
+            <button type="submit" class="btn btn-success">Calcular</button>
+        </div>
+    </div>
+
+  </form>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

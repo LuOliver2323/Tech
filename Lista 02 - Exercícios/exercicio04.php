@@ -12,21 +12,14 @@
 
     <h1><center>Exercício 04</center></h1>
 
-    <main class="container margin-top">
-
-        <div class="row">
-
+    <main class="container mt-5">
         <form action="exerc4_resp.php" method="post">
-        <div class="row">
-            <div class="rol">
+            <div class="form-group">
                 <label for="valor" class="form-label">Informe um valor</label>
                 <input type="number" name="valor" id="valor" class="form-control"/>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col">
-                <button type="submit" class="btn btn-sucess">Consultar</button>
+            <button type="submit" class="btn btn-primary">Consultar</button>
             </div>
         </div>
     </form>

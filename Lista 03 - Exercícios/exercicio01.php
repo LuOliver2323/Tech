@@ -8,10 +8,12 @@
     <title>Lista 3 - Exercício 01</title>
   </head>
 
-  <body class="container">
+  <body class="container mt-5">
   <form action="exercicio01.php" method="POST">
+  
+  <h1><center>Exercício 01</center></h1>
 
-    <?php for($i=1; $i<=3; $i++){ ?>
+    <?php for($i=1; $i<=10; $i++){ ?>
 
     <div class="row">
         <div class="col">
@@ -25,11 +27,13 @@
         </div>
     </div>
 
-    <?php } ?>
+    <?php 
+    } 
+    ?>
 
     <div class="row"> 
         <div class="col">
-            <button type="submit" class="btn btn-warning">Calcular</button>
+            <button type="submit" class="btn btn-primary">Calcular</button>
         </div>
     </div>
 
@@ -37,7 +41,7 @@
 
   <?php
     if($_POST){
-        for($i=1; $i<=3; $i++){
+        for($i=1; $i<=10; $i++){
             $vetor[$_POST["aluno$i"]] = $_POST["nota$i"];
         }
         foreach($vetor as $chave => $valor){
