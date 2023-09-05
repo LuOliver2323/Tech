@@ -5,29 +5,36 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
-    <title>Lista 3 - Exercício 05</title>
+    <title>Lista 4 - Exercício 01</title>
   </head>
 
   <body class="container mt-5">
-  <form action="exer05_resp.php" method="POST">
+  <form action="" method="POST">
   
-  <h1><center>Exercício 05</center></h1>
+  <h1><center>Exercício 01</center></h1>    
 
-        <?php
-            for ($i = 1; $i <= 20; $i++) {
-                echo '<div class="form-group">';
-                echo '<label for="numero' . $i . '">Número ' . $i . ':</label>';
-                echo '<input type="number" class="form-control" id="numero' . $i . '" name="numero' . $i . '" required>';
-                echo '</div>';
-            }
-        ?>
+  <?php
+  function validarData($data) {
+      $dataInfo = date_parse($data);
+      return ($dataInfo["error_count"] === 0 && checkdate($dataInfo["month"], $dataInfo["day"], $dataInfo["year"]));
+  }
 
-    <div class="row"> 
-        <div class="col">
-            <button type="submit" class="btn btn-primary">Calcular</button>
-        </div>
-    </div>
-  </form>
+  function obterDiaDaSemana($data) {
+      return date('l', strtotime($data));
+  }
+  
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $data = $_POST["data"];
+
+    if (validarData($data)) {
+        $diaSemana = obterDiaDaSemana($data);
+        echo "<p>A data $data é válida e corresponde a um(a) $diaSemana.</p>";
+    } else {        
+       
+  echo "<p>A data $data é inválida. Por favor, insira uma data válida.</p>";
+    }
+}
+?>    
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

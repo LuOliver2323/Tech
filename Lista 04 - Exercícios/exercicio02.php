@@ -5,28 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
-    <title>Lista 3 - Exercício 05</title>
+    <title>Lista 4 - Exercício 02</title>
   </head>
 
   <body class="container mt-5">
-  <form action="exer05_resp.php" method="POST">
+  <form action="exerc02_resp.php" method="POST">
   
-  <h1><center>Exercício 05</center></h1>
+  <h1><center>Exercício 02</center></h1>
+  
+  <?php  
+  $nomes = [];
+  for ($i=1;$i<=2;$i++) { ?>
 
-        <?php
-            for ($i = 1; $i <= 20; $i++) {
-                echo '<div class="form-group">';
-                echo '<label for="numero' . $i . '">Número ' . $i . ':</label>';
-                echo '<input type="number" class="form-control" id="numero' . $i . '" name="numero' . $i . '" required>';
-                echo '</div>';
-            }
-        ?>
+  <div class="row">
+        <div class="col">
+            <label for="nomes" class="form-label">Informe um número para descobrir o mês : </label>
+            <input type="text" name="nomes" id="nomes" class="form-control"/> 
+        </div>
+    </div>
+
 
     <div class="row"> 
         <div class="col">
             <button type="submit" class="btn btn-primary">Calcular</button>
         </div>
     </div>
+    <?php
+    }
+    ?>
+
   </form>
 
     <!-- JavaScript (Opcional) -->

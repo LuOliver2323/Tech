@@ -1,5 +1,5 @@
 <?php
-          function isPrimo($numero) {
+        function isPrimo($numero) {
             if ($numero <= 1) {
                 return false;
             }
@@ -32,4 +32,4 @@
             echo "<li>$numeroPrimo</li>";
         }
         echo '</ul>';
-  ?>
+        ?>
