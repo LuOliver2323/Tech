@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
     <title>Lista 2 - Exercício 02</title>
   </head>
   <body>
 
-    <h1><center>Exercício 02</center></h1>
-
-    <main class="container margin-top">
+    <main class="container">
     <form action="exerc2_resp.php" method="POST">
+    
+    <h1><center>Exercício 02</center></h1>
 
         <div class="row">
 
@@ -22,7 +21,7 @@
             ?>
           
             <div class="col-md-12">
-                <label for="valor" <?= $i ?>" class="form-label">
+                <label for="valor" <?= $i ?> class="form-label">
                     Informe o <?= $i ?>º valor
                 </label>
 

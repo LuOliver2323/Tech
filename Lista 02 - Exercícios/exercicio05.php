@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
     <title>Lista 2 - Exercício 05</title>
   </head>
   <body>
 
+    <main class="container margin-top">
+        <form action="exerc5_resp.php" method="post">
+          
     <h1><center>Exercício 05</center></h1>
 
-    <main class="container margin-top">
-
-        <div class="row">
-
-        <form action="exerc5_resp.php" method="post">
         <div class="row">
             <div class="rol">
-                <label for="valor" class="form-label">Informe um valor</label>
+                <label for="valor" class="form-label">Informe um valor: </label>
                 <input type="number" name="valor" id="valor" class="form-control"/>
             </div>
         </div>
 
         <div class="row">
             <div class="col">
-                <button type="submit" class="btn btn-sucess">Consultar</button>
+                <button type="submit" class="btn btn-primary">Consultar</button>
             </div>
         </div>
-    </form>
-
     </form>
     </main>
 

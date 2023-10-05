@@ -13,26 +13,24 @@
   
   <h1><center>Exercício 02</center></h1>
   
-  <?php  
-  $nomes = [];
-  for ($i=1;$i<=2;$i++) { ?>
+  <?php for($i=1; $i<=2; $i++){ ?>
 
   <div class="row">
-        <div class="col">
-            <label for="nomes" class="form-label">Informe um número para descobrir o mês : </label>
-            <input type="text" name="nomes" id="nomes" class="form-control"/> 
-        </div>
+      <div class="col">
+          <label for="aluno<?=$i?>" class="form-label">Informe o nome do Aluno <?=$i?>: </label>
+          <input type="text" name="alunos[]<?=$i?>" id="aluno<?=$i?>" class="form-control"/> 
+      </div>
     </div>
 
+    <?php 
+    }
+    ?>
 
     <div class="row"> 
         <div class="col">
             <button type="submit" class="btn btn-primary">Calcular</button>
         </div>
     </div>
-    <?php
-    }
-    ?>
 
   </form>
 

@@ -14,6 +14,7 @@
   <h1><center>Exercício 05</center></h1>
 
   <?php for ($i=1;$i<=5;$i++){ ?>
+    
   <div class="row">
         <div class="col">
             <label for="valor<?=$i?>" class="form-label">Informe o valor <?=$i?>: </label>

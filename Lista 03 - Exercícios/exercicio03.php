@@ -14,14 +14,18 @@
   <h1><center>Exercício 03</center></h1>
 
     <div class="row">
+
       <?php for($i=1;$i<=10;$i++){ ?>
+
         <div class="col">
             <label for="form-label" for="v<?=$i?>">Informe o valor <?=$i?>: </label>
             <input type="number" id="v<?=$i?>" name="v<?=$i?>" class="form-control"/>
         </div>
-        <?php } ?>
-    </div>
 
+      <?php 
+      } 
+      ?>
+      
     <div class="row">
         <div class="col">
             <label for="form-label" for="valor_mult">Informe o valor a ser multiplicado: </label>

@@ -14,17 +14,18 @@
   <h1><center>Exercício 01</center></h1>
   
   <div class="row">
-        <div class="col">
-            <label for="data" class="form-label">Digite a data no Formato: Ano-Mês-Dia:</label>
+      <div class="col">
+        <label for="data" class="form-label">Digite a data no Formato: Ano-Mês-Dia:</label>
         <input type="text" id="data" name="data" required>
-        </div>
-    </div>
+      </div>
+  </div>
 
-    <div class="row"> 
-        <div class="col">
-            <button type="submit" class="btn btn-primary">Verificar Data</button>
-        </div>
-    </div>
+  <div class="row"> 
+      <div class="col">
+        <button type="submit" class="btn btn-primary">Verificar Data</button>
+      </div>
+  </div>
+
   </form>
 
     <!-- JavaScript (Opcional) -->

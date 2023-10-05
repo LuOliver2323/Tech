@@ -13,21 +13,25 @@
   
   <h1><center>Exercício 02</center></h1>
 
+  <?php for($i=1; $i<=4; $i++){ ?>
+
     <div class="row">
-      <?php for($i=1;$i<=2;$i++){ 
-          ?>
         <div class="col">
-            <label for="form-label" for="numero">Informe o valor: </label>
-            <input type="number" id="numero" name="numero" class="form-control"/>
+            <label for="numero<?=$i?>" class="form-label">Informe um número <?=$i?>: </label>
+            <input type="number" name="numero<?=$i?>" id="numero<?=$i?>" class="form-control"/> 
         </div>
-        <?php } ?>
     </div>
+
+    <?php 
+    } 
+    ?>
 
     <div class="row"> 
         <div class="col">
-            <button type="submit" class="btn btn-success">Calcular</button>
+            <button type="submit" class="btn btn-primary">Calcular</button>
         </div>
     </div>
+
   </form>
 
     <!-- JavaScript (Opcional) -->

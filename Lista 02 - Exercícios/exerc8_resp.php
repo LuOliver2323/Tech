@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
     <title>Lista 2 - Resposta Exercício 08</title>
-  </head>
+  </head>   
   <body>
-    <h1>
+
+  <div class="container mt-5">        
     <?php
             $metros_quadrados = $_POST['metros_quadrados'];
             $litros_tinta = $metros_quadrados / 3;
             $latas_tinta = ceil($litros_tinta / 18);
             $preco_total = $latas_tinta * 80;
 
-            echo 'Área a ser pintada: ' . $metros_quadrados . 'Metros Quadrados';
-            echo 'Quantidade de latas de tinta necessárias: ' . $latas_tinta;
-            echo 'Preço total: R$ ' . $preco_total;
+            echo "<p>Área a ser pintada: $metros_quadrados Metros quadrados</p>";
+            echo "<p>Quantidade de latas de tinta necessárias: $latas_tinta</p>";
+            echo "<p>Preço total: R$ $preco_total</p>";
         ?>
+  </div>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

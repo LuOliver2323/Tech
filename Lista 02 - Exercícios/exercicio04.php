@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">  
     <title>Lista 2 - Exercício 04</title>
   </head>
   <body>
 
-    <h1><center>Exercício 04</center></h1>
-
     <main class="container mt-5">
         <form action="exerc4_resp.php" method="post">
+
+        <h1><center>Exercício 04</center></h1>
+
             <div class="form-group">
                 <label for="valor" class="form-label">Informe um valor</label>
                 <input type="number" name="valor" id="valor" class="form-control"/>
             </div>
-        </div>
+      
             <button type="submit" class="btn btn-primary">Consultar</button>
             </div>
         </div>
-    </form>
-
     </form>
     </main>
 

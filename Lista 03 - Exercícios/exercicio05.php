@@ -13,20 +13,25 @@
   
   <h1><center>Exercício 05</center></h1>
 
-        <?php
-            for ($i = 1; $i <= 20; $i++) {
-                echo '<div class="form-group">';
-                echo '<label for="numero' . $i . '">Número ' . $i . ':</label>';
-                echo '<input type="number" class="form-control" id="numero' . $i . '" name="numero' . $i . '" required>';
-                echo '</div>';
-            }
-        ?>
+    <?php for($i=1; $i<=5; $i++){ ?>
 
+    <div class="row">
+        <div class="col">
+            <label for="numero<?=$i?>" class="form-label">Informe um numero <?=$i?>: </label>
+            <input type="text" name="numero<?=$i?>" id="numero<?=$i?>" class="form-control"/> 
+        </div>
+    </div>
+
+    <?php 
+    } 
+    ?>
+    
     <div class="row"> 
         <div class="col">
             <button type="submit" class="btn btn-primary">Calcular</button>
         </div>
     </div>
+
   </form>
 
     <!-- JavaScript (Opcional) -->
