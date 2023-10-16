@@ -21,15 +21,23 @@ $router->post("/categoria/gravar",
     'Php\Biblioteca\Controller\CategoriaController@gravar'
 );
 
+$router->post("/categoria/editar/{id}",
+    'Php\Biblioteca\Controller\CategoriaController@editar'
+);
+
+$router->post("/categoria/deletar/{id}",
+    'Php\Biblioteca\Controller\CategoriaController@deletar'
+);
+
 $router->get("/categoria/index",
     'Php\Biblioteca\Controller\CategoriaController@index'
 );
 
-$router->get("/categoria/alterar",
+$router->get("/categoria/alterar/{id}",
     'Php\Biblioteca\Controller\CategoriaController@alterar'
 );
 
-$router->get("/categoria/excluir",
+$router->get("/categoria/excluir/{id}",
     'Php\Biblioteca\Controller\CategoriaController@excluir'
 );
 

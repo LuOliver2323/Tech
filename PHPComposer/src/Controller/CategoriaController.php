@@ -12,13 +12,17 @@ class CategoriaController
         require '../src/View/Categoria/inserir.php';
     }
 
-     //HTTP GET
-     public function alterar() {
+    public function alterar($params) {        
+        $categoriaDAO = new CategoriaDAO();
+        $id = $params[1];
+        $resultado = $categoriaDAO->consultarPorId($id);
         require '../src/View/Categoria/alterar.php';
     }
 
-     //HTTP GET
-     public function excluir() {
+    public function excluir($params) {
+        $categoriaDAO = new CategoriaDAO();
+        $id = $params[1];
+        $resultado = $categoriaDAO->consultarPorId($id);
         require '../src/View/Categoria/excluir.php';
     }
 
@@ -30,6 +34,30 @@ class CategoriaController
             $_SESSION['gravar'] = true;
         }else {
             $_SESSION['gravar'] = false;
+        }
+        $this->index();
+    }
+
+    public function editar($params){
+        $categoria = new Categoria($params[1], $_POST['descricao']);
+        $categoriaDAO = new CategoriaDAO();
+        session_start();
+        if ($categoriaDAO->alterar($categoria)){
+            $_SESSION['editar'] = true;
+        }else {
+            $_SESSION['editar'] = false;
+        }
+        $this->index();
+    }
+
+    public function deletar($params){
+        $categoria = new Categoria($params[1], "");
+        $categoriaDAO = new CategoriaDAO();
+        session_start();
+        if ($categoriaDAO->excluir($categoria)){
+            $_SESSION['deletar'] = true;
+        }else {
+            $_SESSION['deletar'] = false;
         }
         $this->index();
     }
